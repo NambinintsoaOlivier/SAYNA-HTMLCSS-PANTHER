@@ -90,7 +90,7 @@ nav {
 .col-2 {
     background-color: rgb(255, 0, 0);
     width: 16.66%;
-    height: 200px;
+    height: auto;
 }
 
 .col-3 {
@@ -114,7 +114,7 @@ nav {
 .col-6 {
     background-color: rgb(104, 9, 9);
     width: 50%;
-    height: 800px;
+    height: auto;
 }
 
 .col-7 {
@@ -126,7 +126,12 @@ nav {
 .col-8 {
     background-color: rgb(3, 3, 26);
     width: 66.66%;
-    height: 200px;
+    height: auto;
+}
+
+.col-8 div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .col-9 {
@@ -238,7 +243,23 @@ main {
     height: 500px;
     background-color: rgb(4, 101, 185);
     border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     box-shadow: -1px -1px 26px -5px;
+}
+
+.list-info {
+    width: 100%;
+    text-align: center;
+}
+
+.choice {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: space-evenly;
 }
 
 .formulaire {
@@ -248,6 +269,10 @@ main {
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 150px;
+}
+
+form {
+    color: #0e1522;
 }
 
 footer {
