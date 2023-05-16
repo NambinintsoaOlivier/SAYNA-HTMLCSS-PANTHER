@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 
 body {
-    background-image: linear-gradient(to right, #0e1522, #263655);
+    background: url(Assets/All-pages/arrière_plan.png);
+    background-size: 100%;
+    color: #ffff;
+}
+
+a {
+    color: #ffff;
+}
+
+.active {
+    text-decoration: underline;
+    color: #3D2DA6;
 }
 
 .autom {
@@ -23,6 +35,11 @@ header {
     align-items: center;
 }
 
+ul {
+    display: flex;
+    align-items: center;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +48,7 @@ nav {
 
 .nav-link {
     background-color: rgb(175, 83, 83);
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
     float: right;
@@ -167,14 +184,18 @@ main {
 
 .line2 {
     width: 5px;
-    height: 50%;
-    background-color: red;
+    height: 60%;
+    background-color: #9E91B7;
 }
 
 .list-ico {
     width: 20px;
-    background-color: yellow;
-    height: 50%;
+    /* background-color: yellow; */
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .reseaux-s {
@@ -183,7 +204,7 @@ main {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     align-items: center;
 }
 
