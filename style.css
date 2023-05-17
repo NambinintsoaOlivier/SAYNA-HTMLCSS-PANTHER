@@ -5,37 +5,91 @@
     text-decoration: none;
 }
 
+
+/* ---------------font family------------ */
+
+@font-face {
+    font-family: 'Canterell';
+    src: url(font/cantarell/Cantarell-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Panthera';
+    src: url(font/black-panther/PantheraRegular-MVZ9J.ttf);
+}
+
+@font-face {
+    font-family: 'beyno';
+    src: url(font/beyno/BEYNO/BEYNO.ttf);
+}
+
+@font-face {
+    font-family: 'wakanda';
+    src: url(font/WakandaForever-Regular/WakandaForever-Regular.ttf);
+}
+
 body {
-    background: url(Assets/All-pages/arrière_plan.png);
-    background-size: 100%;
+    background: url(Assets/All-pages/arrière_plan.png) center top repeat;
     color: #ffff;
+    font-family: Canterell;
 }
 
-a {
-    color: #ffff;
+h1 {
+    font-family: Panthera;
+    font-size: 46px;
+    color: #9e91b7;
 }
 
-.active {
+h2 {
+    font-family: beyno;
+    color: #9e91b7;
+}
+
+.footer {
+    font-size: 10px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.citation {
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+
+p a {
     text-decoration: underline;
-    color: #3D2DA6;
 }
 
-.autom {
+
+/* ----------------container---------------- */
+
+.container {
+    /* background-color: brown; */
+    width: 83%;
     height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    /* margin-top: 30px; */
 }
+
+.container-full {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+/* ----------------------header------------------ */
 
 header {
-    background-color: chocolate;
     width: 100%;
     height: 80px;
     position: relative;
     top: 0;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-
-ul {
     display: flex;
     align-items: center;
 }
@@ -47,19 +101,109 @@ nav {
 }
 
 .nav-link {
-    background-color: rgb(175, 83, 83);
     width: 40%;
     display: flex;
-    justify-content: space-evenly;
-    float: right;
+    justify-content: end;
 }
 
-.container {
-    background-color: brown;
-    width: 80%;
+.active {
+    text-decoration: underline;
+    color: #3D2DA6;
+}
+
+li a {
+    font-family: beyno;
+}
+
+
+/* ------------------------the column----------------- */
+
+.row {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    /* background-color: #263655; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.col-1 {
+    /* background-color: blue; */
+    width: 8.33%;
+    height: 200px;
+}
+
+.col-2 {
+    /* background-color: rgb(255, 0, 0); */
+    width: 16.66%;
     height: auto;
-    margin: 0 auto;
-    margin-bottom: 40px;
+}
+
+.col-3 {
+    /* background-color: rgb(195, 0, 255); */
+    width: 25%;
+    height: auto;
+}
+
+.col-4 {
+    /* background-color: rgb(0, 247, 255); */
+    width: 33.33%;
+    height: auto;
+}
+
+.col-5 {
+    /* background-color: rgb(43, 255, 0); */
+    width: 41.66%;
+    height: auto;
+}
+
+.col-6 {
+    /* background-color: rgb(104, 9, 9); */
+    width: 50%;
+    height: auto;
+}
+
+.col-7 {
+    /* background-color: rgb(32, 3, 21); */
+    width: 58.33%;
+    height: auto;
+}
+
+.col-8 {
+    /* background-color: rgb(3, 3, 26); */
+    width: 66.66%;
+    height: auto;
+    text-align: end;
+}
+
+.col-8 div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 18px;
+}
+
+.row .col-8 h2 {
+    letter-spacing: 28px
+}
+
+.row .col-7 h2,
+.row .col-8 h2 {
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+.col-9 {
+    /* background-color: rgb(153, 153, 197); */
+    width: 75%;
+    height: auto;
+}
+
+.col-10 {
+    /* background-color: rgb(255, 72, 0); */
+    width: 83.33%;
+    height: auto;
 }
 
 .col-11 {
@@ -70,92 +214,60 @@ nav {
     width: 100%;
 }
 
-.row {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    background-color: #263655;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.col-1 {
-    background-color: blue;
-    width: 8.33%;
-    height: 200px;
-}
-
-.col-2 {
-    background-color: rgb(255, 0, 0);
-    width: 16.66%;
-    height: auto;
-}
-
-.col-3 {
-    background-color: rgb(195, 0, 255);
-    width: 25%;
-    height: 250px;
-}
-
-.col-4 {
-    background-color: rgb(0, 247, 255);
-    width: 33.33%;
-    height: auto;
-}
-
-.col-5 {
-    background-color: rgb(43, 255, 0);
-    width: 41.66%;
-    height: auto;
-}
-
-.col-6 {
-    background-color: rgb(104, 9, 9);
-    width: 50%;
-    height: auto;
-}
-
-.col-7 {
-    background-color: rgb(32, 3, 21);
-    width: 58.33%;
-    height: 500px;
-}
-
-.col-8 {
-    background-color: rgb(3, 3, 26);
-    width: 66.66%;
-    height: auto;
-}
-
-.col-8 div {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.col-9 {
-    background-color: rgb(153, 153, 197);
-    width: 75%;
-    height: 200px;
-}
-
-.col-10 {
-    background-color: rgb(255, 72, 0);
-    width: 83.33%;
-    height: 200px;
-}
-
 .left-null {
-    left: 5%;
+    left: 4.2%;
     position: relative;
-    width: 90%;
+    width: 91.5%;
+}
+
+a {
+    color: #ffff;
+}
+
+.autom {
+    height: auto;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    float: left;
+}
+
+li a,
+a img {
+    display: block;
+    text-align: center;
+    padding: 8px 25px;
+    text-decoration: none;
+}
+
+.text {
+    font-size: 16px;
 }
 
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: justify;
+}
+
+.bloc {
+    width: 90%;
+    margin-left: 10px;
+}
+
+.col-6 h2 {
+    /* display: flex; */
+    align-self: baseline;
+}
+
+label {
+    color: #021740;
 }
 
 .column {
@@ -166,7 +278,7 @@ main {
     /* position: absolute; */
     left: 0px;
     right: 0px;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     height: auto;
 }
 
@@ -178,17 +290,17 @@ main {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    background-color: #ffff;
+    /* background-color: #ffff; */
 }
 
 .line1 {
-    width: 5px;
+    width: 3px;
     height: auto;
     background-color: #9E91B7;
 }
 
 .line2 {
-    width: 5px;
+    width: 3px;
     height: 60%;
     background-color: #9E91B7;
 }
@@ -216,12 +328,11 @@ main {
 .barre {
     width: 100%;
     height: 250px;
-    background-color: #0e1522;
+    background-color: #021740;
     display: flex;
 }
 
 .panther {
-    width: 80%;
     position: relative;
     background-color: blueviolet;
     height: 300px;
@@ -230,40 +341,71 @@ main {
 .profil {
     position: relative;
     z-index: 1;
-    top: 150px;
-    width: 70%;
-    height: 400px;
-    background-color: aliceblue;
+    top: 340px;
+    width: 250px;
+    height: 550px;
+    /* background-color: aliceblue; */
     border-radius: 20px;
-    box-shadow: -1px -1px 26px -5px;
+    /* box-shadow: -1px -1px 26px -5px; */
+}
+
+.profil-suite {
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
 }
 
 .info-profil {
-    width: 80%;
-    height: 500px;
-    background-color: rgb(4, 101, 185);
+    color: black;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    justify-content: center;
+    height: 510px;
     display: flex;
-    flex-direction: column;
     align-items: end;
-    box-shadow: -1px -1px 26px -5px;
+    /* box-shadow: -1px -1px 26px -5px; */
 }
 
 .list-info {
+    width: 70%;
+    align-self: center;
+}
+
+.list-info .bloc {
     width: 100%;
+    margin: 0;
+}
+
+.list-info h3 {
     text-align: center;
 }
 
 .choice {
+    width: 100%;
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    justify-content: space-evenly;
+    grid-gap: 0px;
+    justify-content: space-between;
 }
 
+.button {
+    background-color: #3D2DA6;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 2px;
+    border-radius: 4px;
+}
+
+
+/* --------------------------Notre formulaire------------------- */
+
 .formulaire {
-    background-color: aliceblue;
+    background-image: linear-gradient(#F2CEF2, rgba(77, 58, 161, 0.2));
     width: 80%;
     height: 500px;
     margin-top: 30px;
@@ -273,10 +415,52 @@ main {
 
 form {
     color: #0e1522;
+    text-align: center;
+    width: 60%;
+}
+
+form p {
+    font-size: 12px;
+}
+
+form input,
+textarea {
+    width: 520px;
+    background-color: transparent;
+    border: 1px solid #3D2DA6!important;
+    padding: 0.01em 16px;
+    border-radius: 38px;
+    height: 56px;
+    color: #3D2DA6;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+form .btn {
+    background-color: #F2CEF2;
+    width: 174px;
+    height: 54px;
+}
+
+form .btn:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px 2px #F2CEF2;
+}
+
+.bg-form {
+    background: url(Assets/Accueil/Pantherhome7.png) no-repeat center;
+    background-size: cover;
+    background-position: top;
+    /* width: 100%; */
+    height: auto;
 }
 
 footer {
-    background-color: rgb(29, 12, 0);
+    background: url(Assets/All-pages/back_footer.png) center top no-repeat;
+    /* background-color: rgb(29, 12, 0); */
     width: 100%;
     height: 450px;
     /* position: relative; */
@@ -284,4 +468,19 @@ footer {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+}
+
+.choice input {
+    background-color: #3D2DA6;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
 }
