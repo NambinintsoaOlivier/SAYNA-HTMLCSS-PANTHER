@@ -49,6 +49,10 @@ h2 {
     font-size: 10px;
 }
 
+footer h2 {
+    font-family: Canterell;
+}
+
 .text {
     font-size: 16px;
 }
@@ -89,9 +93,9 @@ header {
     height: 80px;
     position: relative;
     top: 0;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 nav {
@@ -120,12 +124,12 @@ li a {
 
 .row {
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
     /* background-color: #263655; */
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     margin-top: 30px;
+    text-align: justify;
     margin-bottom: 30px;
 }
 
@@ -160,7 +164,7 @@ li a {
 }
 
 .col-6 {
-    /* background-color: rgb(104, 9, 9); */
+    /* background-color: rgb(172, 111, 111); */
     width: 50%;
     height: auto;
 }
@@ -208,6 +212,10 @@ li a {
 
 .col-11 {
     width: 91.66%;
+}
+
+.al-center {
+    align-self: center;
 }
 
 .col-12 {
@@ -483,4 +491,65 @@ footer {
     margin: 2px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+
+/* -----------------------------------page wakanda------------------------------------------------------- */
+
+.bg-wakanda {
+    /* position: absolute; */
+    background-image: url(Assets/Wakanda/Pantherwakanda1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-top: -60px;
+    /* background-color: rgb(117, 117, 36); */
+    width: 100%;
+    height: 800px;
+    /* top: 14px; */
+}
+
+main {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #c3c3c3; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.font-wak {
+    font-family: wakanda;
+    letter-spacing: 10px;
+}
+
+.font-beyno {
+    font-family: beyno;
+}
+
+.bg {
+    background-image: url(Assets/Wakanda/Pantherwakanda2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 800px;
+}
+
+.cadre {
+    background-color: #372b9b;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.cadre a {
+    margin: 20px 0px 0px 30px;
+}
+
+.top-cont {
+    position: relative;
+    top: -700px;
 }
