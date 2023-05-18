@@ -4,6 +4,22 @@
         list-style: none;
         text-decoration: none;
     }
+    
+    .ani {
+        position: relative;
+        animation: mymove 1s ease-out 0s 1 reverse;
+    }
+    
+    @keyframes mymove {
+        from {
+            left: 0;
+            opacity: 0;
+        }
+        to {
+            left: 46em;
+            opacity: 1;
+        }
+    }
     /* ---------------font family------------ */
     
     @font-face {
@@ -37,7 +53,6 @@
     main {
         left: 0px;
         right: 0px;
-        background-color: yellowgreen;
         height: auto;
         width: 100%;
         height: auto;
@@ -47,14 +62,14 @@
     }
     
     .container {
-        background-color: brown;
+        /* background-color: brown; */
         width: 83.34%;
         height: auto;
         margin: 0 auto;
     }
     
     .container-full {
-        background-color: brown;
+        /* background-color: brown; */
         width: 100%;
         height: auto;
         margin: 0 auto;
@@ -64,79 +79,79 @@
         width: 100%;
         height: auto;
         display: flex;
-        background-color: #263655;
+        /* background-color: #263655; */
         justify-content: flex-start;
         text-align: justify;
     }
     
     .col-1 {
-        background-color: blue;
+        /* background-color: blue; */
         width: 8.33%;
         height: 200px;
     }
     
     .col-2 {
-        background-color: rgb(255, 0, 0);
+        /* background-color: rgb(255, 0, 0); */
         width: 16.66%;
         height: auto;
     }
     
     .col-3 {
-        background-color: rgb(195, 0, 255);
+        /* background-color: rgb(195, 0, 255); */
         width: 25%;
         height: auto;
     }
     
     .col-4 {
-        background-color: rgb(0, 247, 255);
+        /* background-color: rgb(0, 247, 255); */
         width: 33.33%;
         height: auto;
     }
     
     .col-5 {
-        background-color: rgb(43, 255, 0);
+        /* background-color: rgb(43, 255, 0); */
         width: 41.66%;
         height: auto;
     }
     
     .col-6 {
-        background-color: rgb(172, 111, 111);
+        /* background-color: rgb(172, 111, 111); */
         width: 50%;
         height: auto;
     }
     
     .col-7 {
-        background-color: rgb(32, 3, 21);
+        /* background-color: rgb(32, 3, 21); */
         width: 58.33%;
         height: auto;
     }
     
     .col-8 {
-        background-color: rgb(3, 3, 26);
+        /* background-color: rgb(3, 3, 26); */
         width: 66.66%;
         height: auto;
     }
     
     .col-9 {
-        background-color: rgb(153, 153, 197);
+        /* background-color: rgb(153, 153, 197); */
         width: 75%;
         height: auto;
     }
     
     .col-10 {
-        background-color: rgb(255, 72, 0);
+        /* background-color: rgb(255, 72, 0); */
         width: 83.33%;
         height: auto;
     }
     
     .col-11 {
-        background-color: dimgray;
+        /* background-color: dimgray; */
         width: 91.66%;
         height: auto;
     }
     
     .col-12 {
-        background-color: green;
+        /* background-color: green; */
         width: 100%;
         height: auto;
     }
@@ -188,7 +203,7 @@
     /* ------------------header style------------------ */
     
     header {
-        background-color: darkorange;
+        /* background-color: darkorange; */
         width: 100%;
         height: 80px;
         position: relative;
@@ -202,6 +217,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    
+    nav a img:hover {
+        cursor: pointer;
+        filter: brightness(2) contrast(2) saturate(2) sepia(2);
     }
     
     .nav-link {
@@ -228,6 +248,10 @@
         float: left;
     }
     
+    li a:hover {
+        text-decoration: underline;
+    }
+    
     li a,
     a img {
         display: block;
@@ -239,13 +263,13 @@
     /* --------------reseaux-sociaux style left--------- */
     
     .lineDown {
+        position: fixed;
         z-index: 2;
         margin-left: 40px;
         width: 23px;
         height: 400px;
-        position: absolute;
         display: flex;
-        background-color: #ffff;
+        /* background-color: #ffff; */
     }
     
     .line1 {
@@ -259,7 +283,7 @@
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        background-color: aquamarine;
+        /* background-color: aquamarine; */
         align-items: center;
     }
     
@@ -270,11 +294,16 @@
     }
     
     .list-ico {
-        background-color: yellow;
+        /* background-color: yellow; */
         height: 40%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    
+    .list-ico img:hover {
+        cursor: pointer;
+        filter: brightness(293%);
     }
     /* ---------------------------------------------- */
     /* --------les classes raccourci------------------ */
@@ -309,20 +338,20 @@
     
     .panther {
         position: relative;
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
         height: 290px;
         width: 80%;
     }
     
     .bloc {
-        background-color: forestgreen;
+        /* background-color: forestgreen; */
         width: 90%;
         margin: 30px 8px;
         height: auto;
     }
     
     .cadre-photo-info {
-        background-color: #0e1522;
+        /* background-color: #0e1522; */
         width: 80%;
         height: 960px;
     }
@@ -332,7 +361,7 @@
         z-index: 1;
         width: 275px;
         height: 370px;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
         border-radius: 20px;
     }
     
@@ -341,7 +370,7 @@
         top: -185px;
         color: black;
         width: 80%;
-        background-color: rgb(192, 19, 19);
+        background-color: #FFFF;
         border-radius: 20px;
         height: 600px;
         display: flex;
@@ -349,7 +378,7 @@
     }
     
     .list-info {
-        background-color: darkgoldenrod;
+        /* background-color: darkgoldenrod; */
         width: 70%;
         margin: 0 auto;
         margin-top: 50px;
@@ -405,6 +434,7 @@
         background-color: #F2CEF2;
         width: 174px;
         height: 54px;
+        border: none;
     }
     
     a .btn {
@@ -413,7 +443,7 @@
     
     form .btn:hover {
         cursor: pointer;
-        box-shadow: 1px 1px 20px 2px #F2CEF2;
+        box-shadow: 0px 1px 10px 0px #F2CEF2;
     }
     
     .bg-form {
@@ -452,6 +482,58 @@
         color: #021740;
     }
     /* ---------------------------------------------------------------- */
+    /* --------------------------------POPUP------------------------------ */
+    
+    .pop {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #021740;
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .popup {
+        width: 600px;
+        height: 500px;
+        border-radius: 25px;
+        align-items: center;
+        transition: all 5s ease-in-out;
+    }
+    
+    .pop:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .pop .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .popup .close:hover {
+        color: #06d85f;
+    }
+    
+    .pop {
+        margin: 30px auto;
+        width: 50%;
+        height: 500px;
+        z-index: 1;
+    }
+    
+    .pop div p {
+        font-weight: bold;
+    }
     /* ---------------------footer--------------------------------------- */
     
     footer h2 {
@@ -459,7 +541,35 @@
         font-size: 22px;
         letter-spacing: 4px;
     }
+    
+    .foot-s {
+        transition: 0.300s;
+    }
+    
+    .foot-s:hover {
+        cursor: pointer;
+        transform: scale(110%);
+        transition: 0.300s;
+    }
+    
+    .rs img {
+        transition: 0.300s;
+    }
+    
+    .rs img:hover {
+        cursor: pointer;
+        transform: scale(110%);
+        transition: 0.300s;
+    }
+    
+    .foot-a :hover {
+        text-decoration: underline;
+    }
     /* -------------------------------------------------------------------- */
+    
+    .barre {
+        background-color: #031537;
+    }
     
     p a {
         text-decoration: underline;
@@ -533,7 +643,7 @@
     }
     
     .cadre {
-        background-color: #372b9b;
+        /* background-color: #372b9b; */
         width: 100%;
         height: 150px;
         display: flex;
@@ -616,6 +726,10 @@
     
     #Killmonger {
         display: block;
+    }
+    
+    .btn:hover {
+        cursor: pointer;
     }
     /* ------------------ */
     /* ------------------------------les responsives-------------------------- */

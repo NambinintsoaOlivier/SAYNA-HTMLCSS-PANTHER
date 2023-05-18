@@ -6,30 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all_screen.css">
     <title>Acceuil</title>
 </head>
 
 <body>
 
     <!-- les deux barres avec les reseaux sociaux à gauche -->
-    <div class="lineDown">
+    <aside class="lineDown">
         <div class="line1"></div>
         <div class="reseaux-s">
             <div class="line2"></div>
             <div class="list-ico">
-                <img src="Assets/All-pages/icon_facebook.png" width="18px" alt="logo icon_facebook">
-                <img src="Assets/All-pages/icon_instagram.png" width="18px" alt="logo icon_instagram">
-                <img src="Assets/All-pages/icon_twitter.png" width="18px" alt="logo twitter">
-                <img src="Assets/All-pages/icon_tiktok.png" width="18px" alt="logo tiktok">
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                    <img src="Assets/All-pages/icon_facebook.png" width="18px" alt="logo icon_facebook">
+                </a>
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                    <img src="Assets/All-pages/icon_instagram.png" width="18px" alt="logo icon_instagram">
+                </a>
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                    <img src="Assets/All-pages/icon_twitter.png" width="18px" alt="logo twitter">
+                </a>
+                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                    <img src="Assets/All-pages/icon_tiktok.png" width="18px" alt="logo tiktok">
+                </a>
+
             </div>
         </div>
-    </div>
+    </aside>
 
     <!-- le header qui contient le navbar -->
     <header>
         <div class="container">
             <nav>
-                <a href="#">
+                <a href="index.html">
                     <img src="Assets/All-pages/footer2.png" width="90px" alt="footer2">
                 </a>
                 <div class="nav-link">
@@ -44,7 +54,7 @@
     </header>
 
     <!-- voici le main contenant toutes les contenus de la page d'accueil -->
-    <main>
+    <main class="ani">
 
         <!-- première contenu Black panther -->
         <div class="container">
@@ -66,15 +76,14 @@
         <div class="container-full" style="height: 240px;">
 
             <div class="row">
-                <div class="col-1 null">null</div>
-                <div class="col-3 flex-center" style="height: 240px;">
+                <div class="col-1 null"></div>
+                <div class="col-3 flex-center barre" style="height: 240px;">
                     <div class="panther flex-center">
                         <img src="Assets/Accueil/Pantherhome2.png" height="290px" alt="Pantherhome2">
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-8 barre">
                     <div class="row">
-
                         <div class="col-4" style="height: 240px;">
                             <div class="bloc">
                                 <h2>KILLMONGER</h2>
@@ -106,7 +115,7 @@
 
                         </div>
 
-                        <div class="col-3 flex-center" id="Pantherhome4" style="height: 240px; position: relative; left: 33px;">
+                        <div class="col-3 flex-center" id="Pantherhome4" style="height: 240px; position: relative;">
                             <img src="Assets/Accueil/Pantherhome4.png" height="240px" width="100%" alt="Pantherhome4">
                             <a href="">
                                 <div class="fleche" style="display: block;">></div>
@@ -118,7 +127,7 @@
         </div>
 
         <!-- contenu naissance d'une prince -->
-        <div class="container" style="margin-top: 40px;">
+        <div id="apropos" class="container" style="margin-top: 40px;">
             <div class="row">
                 <div class="col-6">
                     <div class="citation">
@@ -206,36 +215,56 @@
                         <input class="form-control " type="text " placeholder="Nom "><br><br>
                         <input class="form-control " type="email " placeholder="Email "><br><br>
                         <textarea placeholder="Message "></textarea><br><br>
-                        <a href=" "><input type="button " class="btn form-control " value="Envoyer "></a>
+                        <a href="#popup1"><input type="button " class="btn form-control " value="Envoyer "></a>
                     </form>
                 </div>
             </div>
         </div>
     </main>
-
+    <!-- -------------------------------------------POPPUP------------------------------------------------- -->
+    <div id="popup1" class="pop flex-center">
+        <div class="popup flex-center align-center">
+            <a class="close" href="#formulaire">&times</a>
+            <p>L'opération a été éffectué </p>
+        </div>
+    </div>
     <!-- notre footer -->
     <footer>
         <div class="container ">
             <div class="row ">
-                <div class="col-2 null2">null
+                <div class="col-2 null2">
                 </div>
-                <div class="col-4 flex-center">
+                <a href="index.html" class="col-4 flex-center foot-s">
                     <img style="position: absolute; " width="80px " src="Assets/All-pages/footer2.png " alt=" ">
-                    <img class="ronde" src="Assets/All-pages/footer1.png " height="250px " alt=" "></div>
+
+
+                    <img class="ronde" src="Assets/All-pages/footer1.png " height="250px " alt=" ">
+                </a>
+
                 <div class="col-5 d-flex column" style="grid-gap: 110px;">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-4 foot-a">
                             <h2>PAGES</h2>
-                            <p class="text ">A propos</p>
-                            <p>Wakanda</p>
+                            <a class="text " href="#apropos">A propos</a><br>
+                            <a class="text" href="wakanda.html">Wakanda</a>
+
                         </div>
                         <div class="col-8">
                             <h2 style="text-align: center;">RETROUVEZ NOUS</h2>
-                            <div class="d-flex" style="justify-content: space-evenly;">
-                                <img src="Assets/All-pages/footer3.png " width="30px " alt=" ">
-                                <img src="Assets/All-pages/footer4.png " width="30px " alt=" ">
-                                <img src="Assets/All-pages/footer5.png " width="30px " alt=" ">
-                                <img src="Assets/All-pages/footer6.png " width="30px " alt=" ">
+                            <div class="d-flex rs" style="justify-content: space-evenly;">
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="Assets/All-pages/footer3.png " width="30px " alt=" ">
+                                </a>
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="Assets/All-pages/footer4.png " width="30px " alt=" ">
+                                </a>
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="Assets/All-pages/footer5.png " width="30px " alt=" ">
+                                </a>
+                                <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                    <img src="Assets/All-pages/footer6.png " width="30px " alt=" ">
+                                </a>
+
                             </div>
                         </div>
                     </div>

@@ -160,6 +160,9 @@
     .formu .form-control {
         height: 30px;
     }
+    .lineDown {
+        display: none;
+    }
 }
 
 @media all and (max-width: 400px) {
