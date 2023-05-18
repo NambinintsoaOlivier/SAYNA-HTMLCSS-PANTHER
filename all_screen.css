@@ -1,0 +1,175 @@
+@media all and (max-width: 1100px) {
+    .cont-wakanda {
+        height: 1900px;
+    }
+    .photo1 {
+        width: 594px;
+        left: -33px;
+    }
+    .defi {
+        height: 463px;
+    }
+}
+
+@media all and (max-width: 959px) {
+    h2 {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .bloc {
+        margin: 10px 8px;
+    }
+    .panther img {
+        width: 100%;
+    }
+    .container-full {
+        margin-top: 30px;
+    }
+    footer {
+        height: 310px;
+    }
+    form h1 {
+        font-size: 42px;
+    }
+    .profil {
+        width: 75%;
+        height: 30%;
+    }
+    .profil img {
+        width: 100%;
+        height: 100%;
+    }
+    footer .col-4 .ronde {
+        width: 100%;
+    }
+    #okoye {
+        display: none;
+    }
+    footer h2 {
+        font-size: 10px;
+    }
+    .list-info {
+        width: 90%;
+    }
+    .fleche {
+        display: none;
+    }
+    .null {
+        display: none;
+    }
+    #Killmonger {
+        display: none;
+    }
+    .choice {
+        grid-gap: 4px;
+    }
+    .lineDown {
+        margin-left: 18px;
+    }
+    .container {
+        width: 95%;
+    }
+    .cont-wakanda {
+        height: 1900px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    form h1 {
+        font-size: 30px;
+    }
+    .form-control {
+        height: 40px;
+    }
+    textarea {
+        height: 100px;
+    }
+    #Pantherhome4 {
+        display: none;
+    }
+    .Pantherhome3 {
+        width: 37%;
+    }
+    .profil {
+        width: 100%;
+    }
+    .info-profil {
+        width: 100%;
+    }
+    .row .col-4 {
+        min-width: 100px;
+    }
+    li a,
+    a img {
+        padding: 8px 10px;
+    }
+    .formulaire {
+        min-width: 330px;
+    }
+    .null2 {
+        display: none;
+    }
+    footer .col-5 {
+        width: 58%;
+    }
+    .panther {
+        width: 100%;
+    }
+    .panther img {
+        height: 142px;
+    }
+    .cont-wakanda {
+        height: 2500px;
+    }
+    .engime2 {
+        width: 100%;
+    }
+    .engime2 p {
+        width: 82%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+    .button {
+        padding: 5px 0;
+    }
+    .cont-wakanda {
+        height: 3000px;
+    }
+    .cadre {
+        font-size: 8px;
+    }
+    li a,
+    a img {
+        padding: 6px 4px;
+    }
+    .cadre {
+        width: 100%;
+    }
+    .formu {
+        width: 100%;
+    }
+    .formu .form-control {
+        height: 30px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .cont-wakanda {
+        height: 3500px;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .cont-wakanda {
+        height: 4500px;
+    }
+}
