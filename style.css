@@ -7,16 +7,16 @@
     
     .ani {
         position: relative;
-        animation: mymove 1s ease-out 0s 1 reverse;
+        animation: mymove 2s ease-out 0s 1;
     }
     
     @keyframes mymove {
-        from {
-            left: 0;
+        0% {
+            margin-left: -60em;
             opacity: 0;
         }
-        to {
-            left: 46em;
+        100% {
+            margin-left: 0;
             opacity: 1;
         }
     }
@@ -167,6 +167,7 @@
     .footer {
         font-family: Canterell;
         font-size: 10px;
+        list-style: circle;
     }
     
     .text {
@@ -258,6 +259,10 @@
         text-align: center;
         padding: 8px 25px;
         text-decoration: none;
+    }
+    
+    .sayna:hover {
+        filter: sepia(100%) contrast(50%) hue-rotate(180deg) saturate(160);
     }
     /* ------------------------------------------ */
     /* --------------reseaux-sociaux style left--------- */
@@ -385,12 +390,16 @@
         height: auto;
         align-self: center;
     }
+    
+    .lab label {
+        margin-top: 20px;
+    }
     /* ------------------------------------------------------- */
     /* --------------------------Notre formulaire------------------- */
     
     .formulaire {
-        background-image: linear-gradient(#F2CEF2, rgba(77, 58, 161, 0.2));
-        width: 80%;
+        background-image: linear-gradient(#fff, rgba(77, 58, 161, 0.2));
+        width: 53%;
         height: 500px;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -413,7 +422,7 @@
         border: 1px solid #3D2DA6!important;
         padding: 0.01em 16px;
         border-radius: 38px;
-        height: 56px;
+        height: 42px;
         color: #3D2DA6;
     }
     
@@ -444,6 +453,10 @@
     form .btn:hover {
         cursor: pointer;
         box-shadow: 0px 1px 10px 0px #F2CEF2;
+    }
+    
+    form h1 {
+        font-size: 34px;
     }
     
     .bg-form {
@@ -536,6 +549,10 @@
     }
     /* ---------------------footer--------------------------------------- */
     
+    footer ul li {
+        list-style: circle;
+    }
+    
     footer h2 {
         font-family: Canterell;
         font-size: 22px;
@@ -562,7 +579,7 @@
         transition: 0.300s;
     }
     
-    .foot-a :hover {
+    .foot-a a:hover {
         text-decoration: underline;
     }
     /* -------------------------------------------------------------------- */
@@ -625,6 +642,14 @@
         height: 800px;
     }
     
+    .head-text p {
+        width: 320px;
+    }
+    
+    .text-wakanda {
+        width: 85%;
+    }
+    
     .font-wak {
         font-family: wakanda;
         letter-spacing: 10px;
@@ -645,7 +670,7 @@
     .cadre {
         /* background-color: #372b9b; */
         width: 100%;
-        height: 150px;
+        height: 200px;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -667,7 +692,7 @@
     }
     
     .cont-wakanda {
-        height: 1700px;
+        height: auto;
         /* min-height: 2500px; */
     }
     /* --------------------enigme------------------------------ */
