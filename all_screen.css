@@ -1,4 +1,4 @@
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
     .lineDown {
         left: -41px;
     }
@@ -167,6 +167,9 @@
     .mobi .col-7,
     .mobi .col-5 {
         width: 100%;
+    }
+    .res {
+        display: block!important;
     }
 }
 
